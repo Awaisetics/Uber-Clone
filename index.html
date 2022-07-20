@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Uber</title>
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark text-white py-3" style="background-color: black">
+            <div class="container">
+              <a class="navbar-brand me-5" href="#">Uber</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link text-white" href="#">Safety</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link text-white" href="#">Help</a>
+                  </li>
+                </ul>
+                <div class="d-flex gap-5 align-items-center flex-wrap">
+                    <div>
+                        <i class="fa-solid fa-globe me-2"></i>
+                        <span class="text-light">En</span>
+                    </div>
+                    <div>
+                        <svg class="mb-1 me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66671 3C0.930328 3 0.333374 2.40305 0.333374 1.66667C0.333374 0.930286 0.930328 0.333333 1.66671 0.333333C2.40309 0.333333 3.00004 0.930287 3.00004 1.66667C3.00004 2.40305 2.40309 3 1.66671 3ZM7.00004 3C6.26366 3 5.66671 2.40305 5.66671 1.66667C5.66671 0.930287 6.26366 0.333333 7.00004 0.333333C7.73642 0.333333 8.33337 0.930287 8.33337 1.66667C8.33337 2.40305 7.73642 3 7.00004 3ZM12.3334 3C11.597 3 11 2.40305 11 1.66667C11 0.930287 11.597 0.333333 12.3334 0.333333C13.0698 0.333333 13.6667 0.930287 13.6667 1.66667C13.6667 2.40305 13.0698 3 12.3334 3ZM1.66671 8.33333C0.930328 8.33333 0.333374 7.73638 0.333374 7C0.333374 6.26362 0.930328 5.66667 1.66671 5.66667C2.40309 5.66667 3.00004 6.26362 3.00004 7C3.00004 7.73638 2.40309 8.33333 1.66671 8.33333ZM7.00004 8.33333C6.26366 8.33333 5.66671 7.73638 5.66671 7C5.66671 6.26362 6.26366 5.66667 7.00004 5.66667C7.73642 5.66667 8.33337 6.26362 8.33337 7C8.33337 7.73638 7.73642 8.33333 7.00004 8.33333ZM12.3334 8.33333C11.597 8.33333 11 7.73638 11 7C11 6.26362 11.597 5.66667 12.3334 5.66667C13.0698 5.66667 13.6667 6.26362 13.6667 7C13.6667 7.73638 13.0698 8.33333 12.3334 8.33333ZM0.333374 12.3333C0.333374 13.0697 0.930328 13.6667 1.66671 13.6667C2.40309 13.6667 3.00004 13.0697 3.00004 12.3333C3.00004 11.597 2.40309 11 1.66671 11C0.930328 11 0.333374 11.597 0.333374 12.3333ZM5.66671 12.3333C5.66671 13.0697 6.26366 13.6667 7.00004 13.6667C7.73642 13.6667 8.33337 13.0697 8.33337 12.3333C8.33337 11.597 7.73642 11 7.00004 11C6.26366 11 5.66671 11.597 5.66671 12.3333ZM11 12.3333C11 13.0697 11.597 13.6667 12.3334 13.6667C13.0698 13.6667 13.6667 13.0697 13.6667 12.3333C13.6667 11.597 13.0698 11 12.3334 11C11.597 11 11 11.597 11 12.3333Z" fill="white">             
+                            </path></svg>
+                        <span class="text-light">Products</span>
+                    </div>
+                    <div>
+                        <a class="text-white bg-transparent fw-bold">Login</a>
+                    </div>
+                    <div>
+                        <button class="rounded-pill bg-white px-3 py-1">SignUp</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-8 col-md-5 bg-white px-5 py-3">
+                        <div class="">
+                            <ul class="nav nav-pills d-flex justify-content-between px-5 border-bottom mb-4 " id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active d-flex flex-column align-items-center gap-3 px-4" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <img src="./assets/car-front-outlined.svg" alt="">
+                                        <span class="text-dark">Ride</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link d-flex flex-column align-items-center gap-3 px-4" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        <img src="./assets/Earn-filled.svg" alt="">
+                                        <span class="text-dark">Drive</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <h1 class="display-6 fw-normal mb-5">Request a ride now</h1>
+                                    <form class="mb-3">
+                                        <input type="text" class="form-control bg-light border-0 rounded-0 py-3 px-4 mb-4" placeholder="Enter Destination">
+                                        <input type="text" class="form-control bg-light border-0 rounded-0 py-3 px-4 mb-5" placeholder="Enter Pickup Location">
+                                        <div class="d-flex gap-4 flex-wrap">
+                                            <input type="submit"  class="btn btn-dark rounded-0 px-4 py-2" value="Request now">
+                                            <input type="submit" class="btn btn-secondary rounded-0 px-4 py-2" value="Schedule for later">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade pb-2" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <h2 class="display-5 fw-bold mb-4">Get in the driver’s seat and get paid</h2>
+                                    <p class="mb-4">Drive on the platform with the largest network of active riders.</p>
+                                    <a href="" class="btn btn-dark rounded-0 px-4 py-3 mb-5">Sign up to drive</a> <br>
+                                    <a href="" class="text-dark border-bottom border-muted pb-2 mb-5">Learn more about driving and delivering</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="container">
+                    <div class="bg-white w-50 px-5 py-4">
+                        <ul class="nav nav-pills d-flex justify-content-between px-5 border-bottom mb-4 " id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active d-flex flex-column align-items-center gap-3 px-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <img src="./assets/car-front-outlined.svg" alt="">
+                                    <span class="text-dark">Ride</span>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link d-flex flex-column align-items-center gap-3 px-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    <img src="./assets/Earn-filled.svg" alt="">
+                                    <span class="text-dark">Drive</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <h1 class="display-5 fw-bold mb-5">Request a ride now</h1>
+                                <form class="mb-3">
+                                    <input type="text" class="form-control bg-light border-0 rounded-0 py-3 px-4 mb-4" placeholder="Enter Destination">
+                                    <input type="text" class="form-control bg-light border-0 rounded-0 py-3 px-4 mb-5" placeholder="Enter Pickup Location">
+                                    <div class="d-flex gap-4 flex-wrap">
+                                        <input type="submit"  class="btn btn-dark rounded-0 px-4 py-2" value="Request now">
+                                        <input type="submit" class="btn btn-secondary rounded-0 px-4 py-2" value="Schedule for later">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade pb-2" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <h1 class="display-5 fw-bold mb-4">Get in the driver’s seat and get paid</h1>
+                                <p class="mb-4">Drive on the platform with the largest network of active riders.</p>
+                                <a href="" class="btn btn-dark rounded-0 px-4 py-3 mb-5">Sign up to drive</a> <br>
+                                <a href="" class="text-dark border-bottom border-muted pb-2 mb-5">Learn more about driving and delivering</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            
+        </section>
+
+    </header>
+
+
+    <main>
+
+        <section id="city">
+            <div class="container">
+                <div class="pt-5">
+                    <h2 class="mt-4 mb-4">Uber for Business</h2>
+                    <p class="mb-4">Transform the way your company moves and feeds its people.</p>
+                    <button class="btn btn-dark py-2 px-4 rounded-0 mt-1">See How</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="my-5">Ride with Uber</h2>
+            <div class="row mb-5 pt-5">
+                <div class="col-md-6">
+                    <div class="row m-0">
+                        <div class="col-md-4">
+                            <img src="./assets/rickshaw.webp" style="object-fit: cover" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <h4>Uber Auto</h4>
+                                <small>Get affordable Uber Auto rides with no haggling. Request Uber Auto and ride comfortably around your city.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-5 d-none d-md-block">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row m-0">
+                        <div class="col-md-4">
+                            <img src="./assets/bike.webp" style="object-fit: cover" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <h4>Uber Moto</h4>
+                                <small>Get affordable Uber Auto rides with no haggling. Request Uber Auto and ride comfortably around your city.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-5 d-none d-md-block">
+                         <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-5">
+                <div class="col-md-6">
+                    <div class="row m-0">
+                        <div class="col-md-4">
+                            <img src="./assets/car_keys.webp" style="object-fit: cover" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-5">
+                                <h4>Uber Rentals</h4>
+                                <small>Get affordable Uber Auto rides with no haggling. Request Uber Auto and ride comfortably around your city.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-5 d-none d-md-block">
+                         <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row m-0">
+                        <div class="col-md-4">
+                            <img src="./assets/car.webp" style="object-fit: cover" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <h4>Uber Intercity</h4>
+                                <small>Get affordable Uber Auto rides with no haggling. Request Uber Auto and ride comfortably around your city.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-5 d-none d-md-block">
+                         <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <h1 class="mb-5 pt-5">Focused on safety, wherever you go</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./assets/Drive.webp" width="100%" alt="">
+                    <h5 class="mt-3">Our commitment to your safety</h5>
+                    <p class="mt-3">
+                        With every safety feature and every standard in our Community Guidelines,
+                        we're committed to helping to create a safe environment for our users.
+                    </p>
+                    <div class="d-flex gap-5 mt-5">
+                        <a class="text-dark border-bottom border-muted pb-2 " href="">Read about our Community Guidelines</a>
+                        <a class="text-dark border-bottom border-muted pb-2 " href="">See all safety features</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/Road.webp"  width="100%" alt="">
+                    <h5 class="mt-3">Setting 10,000+ cities in motion</h5>
+                    <p class="mt-3">
+                        With every safety feature and every standard in our Community Guidelines,
+                        we're committed to helping to create a safe environment for our users.
+                    </p>
+                    <div class="mt-5">
+                        <a class="text-dark border-bottom border-muted pb-2 " href="">View all cities</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-md-4">
+                    <img src="./assets/person-multiple-outlined.svg" alt="">
+                    <h5 class="mt-3">About Us</h5>
+                    <p class="mt-3 mb-4">Find out how we started, what drives us, and how we’re reimagining how the world moves.</p>
+                    <a class="text-dark border-bottom border-muted pb-2" href="">Learn more about Uber</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/document-outlined.svg" alt="">
+                    <h5 class="mt-3">Newsroom</h5>
+                    <p class="mt-3 mb-4">See announcements about our latest releases, initiatives, and partnerships.</p>
+                    <a class="text-dark border-bottom border-muted pb-2 " href="">Go to Newsroom</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/home-outlined.svg" alt="">
+                    <h5 class="mt-3">Global citizenship</h5>
+                    <p class="mt-3 mb-4">Read about our commitment to making a positive impact in the cities we serve.</p>
+                    <a class="text-dark border-bottom border-muted pb-2 " href="">See our partnerships</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light mt-5 py-4">
+            <div class="container">
+                <h1 class="mt-5">There’s more to love in the apps</h1>
+                <div class="row my-5">
+                    <div class="col-md-6 bg-white border">
+                        <div class="d-flex align-items-center justify-content-between p-4">
+                            <img src="./assets/Rider-App-logo.png" alt="">
+                            <h4> <a class=" text-dark " href="">Download The Driver App</a></h4>
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-white border">
+                        <div class="d-flex align-items-center justify-content-between p-4">
+                            <img src="./assets/Rider-App-logo.png" alt="">
+                            <h4> <a class=" text-dark " href="">Download The Uber App</a></h4>
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row my-5 pb-3">
+                <div class="col-md-6">
+                    <div class=" d-flex align-items-center justify-content-between border-bottom border-dark py-4">
+                        <a class=" text-dark h2" href="">Sign up to drive</a>
+                        <i class="fa-solid fa-arrow-right fa-xl me-4"></i>   
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" d-flex align-items-center justify-content-between border-bottom border-dark py-4">
+                        <a class=" text-dark h2" href="">Sign up to ride</a>
+                        <i class="fa-solid fa-arrow-right fa-xl me-4"></i>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-white py-5 mt-5" style="background-color: black">
+        <div class="container py-2">
+            <h3 class="my-4 fw-normal">Uber</h3>
+            <a class="text-white" href="">Visit Help Center </a>
+
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"> <a class="text-light small" href="">About US</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Our offerings</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Newsroom</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Investors</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Blog</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Careers</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">AI</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Gift Cards</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"> <a class="text-light small" href="">Ride</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Drive</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Deliver</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Eat</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Uber for Business</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Global citizenship</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"> <a class="text-light small" href="">Safety</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Diversity and Inclusion</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Travel</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"> <a class="text-light small" href="">Airports</a> </li>
+                        <li class="mb-3"> <a class="text-light small" href="">Cities</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-5 mt-3">
+                <div class="col-md-3">
+                    <div class="d-flex gap-4 py-2">
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram text-white"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-youtube text-white"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-whatsapp text-white"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-4 py-2">
+                        <div>
+                            <i class="fa-solid fa-globe me-1"></i>
+                            <span>English</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot me-1"></i>
+                            <span>Gujranwala</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex gap-3">
+                        <img src="./assets/PlayStore.svg" width="125rem" alt="">
+                        <img src="./assets/AppStore.svg" width="125rem" alt="">
+                    </div>
+                </div>
+            </div>
+            <small class="mt-5">© 2022 Uber Technologies Inc.</small>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/26deef0fdc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+</html>
+
+
+
+
